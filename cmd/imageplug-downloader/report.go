@@ -6,8 +6,11 @@ import (
 )
 
 type image struct {
-	ID  int64  `json:"id"`
-	Src string `json:"src"`
+	ID       int64  `json:"id"`
+	Src      string `json:"src"`
+	Filename string `json:"filename"`
+	Hash     string `json:"hash"`
+	Err      error  `json:"-"`
 }
 
 type product struct {
